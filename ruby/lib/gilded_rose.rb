@@ -1,8 +1,11 @@
+# require 'items'
+
 class GildedRose
 
   def initialize(items)
     @items = items
   end
+
 
   def update_quality()
     @items.each do |item|
@@ -52,6 +55,7 @@ class GildedRose
     end
   end
 end
+
 
 class Item
   attr_accessor :name, :sell_in, :quality
